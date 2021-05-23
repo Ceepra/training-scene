@@ -6,10 +6,13 @@ public class WeaponScript : MonoBehaviour
     public float damage = 1f;
     public float range = 100f;
     public float fireRate = 15f;
-
-    public Camera fpsCam;
-
     private float nextTimeToFire = 0f;
+    
+    public Camera playerCam;
+
+    public bool isSemiAuto = false;
+    public bool isShotGun = false;
+    
     // Update is called once per frame
     void Update()
     {
@@ -23,7 +26,7 @@ public class WeaponScript : MonoBehaviour
     void Shoot()
     {
         RaycastHit hit;
-        if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
+        if (Physics.Raycast(playerCam.transform.position, playerCam.transform.forward, out hit, range))
         {
             TargetScript target =hit.transform.GetComponent<TargetScript>();
             if (target != null)
