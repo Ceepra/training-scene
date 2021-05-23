@@ -353,6 +353,38 @@ Transform:
   m_Father: {fileID: 212732555}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &687960601 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1947784017402622613, guid: 6765d806dd9cd814fa071db1b877c662, type: 3}
+  m_PrefabInstance: {fileID: 1946296252783597429}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &687960602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 687960601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a5658982f55798489b54350de434dd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 1970803077759473861, guid: 5bc29614015fab747b4e3a54a02e0453, type: 3}
+  shootForce: 50
+  shootingRate: 0.05
+  spread: 0.02
+  reloadTime: 2
+  range: 100
+  timeBetweenShoting: 1
+  magazineSize: 30
+  bulletsPerTap: 3
+  allowButtonHold: 0
+  playerCam: {fileID: 963194227}
+  attackPoint: {fileID: 756007835}
+  muzzleFlash: {fileID: 0}
+  ammunationDisplay: {fileID: 0}
+  allowInvoke: 1
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -446,6 +478,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!4 &756007835 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5354970637370299226, guid: 6765d806dd9cd814fa071db1b877c662, type: 3}
+  m_PrefabInstance: {fileID: 1946296252783597429}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &892927407
 GameObject:
   m_ObjectHideFlags: 0
@@ -645,6 +682,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouseSensitivity: 800
   playerBody: {fileID: 212732555}
+--- !u!1 &1038951920 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7939272980214938023, guid: b4c4eb50e5b83cc44b59f0192a2f15ca, type: 3}
+  m_PrefabInstance: {fileID: 7222096035112902332}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1038951921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038951920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a5658982f55798489b54350de434dd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 1970803077759473861, guid: 5bc29614015fab747b4e3a54a02e0453, type: 3}
+  shootForce: 0
+  shootingRate: 0
+  spread: 0
+  reloadTime: 0
+  range: 0
+  timeBetweenShoting: 0
+  magazineSize: 0
+  bulletsPerTap: 0
+  allowButtonHold: 0
+  playerCam: {fileID: 963194227}
+  attackPoint: {fileID: 7222096035112902333}
+  muzzleFlash: {fileID: 0}
+  ammunationDisplay: {fileID: 0}
+  allowInvoke: 1
 --- !u!1 &1298402882
 GameObject:
   m_ObjectHideFlags: 0
@@ -1130,7 +1199,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1946296252532616322, guid: 6765d806dd9cd814fa071db1b877c662, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6765d806dd9cd814fa071db1b877c662, type: 3}
 --- !u!4 &4328108185682541453 stripped
 Transform:
@@ -1200,5 +1270,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1454971169541124811, guid: b4c4eb50e5b83cc44b59f0192a2f15ca, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b4c4eb50e5b83cc44b59f0192a2f15ca, type: 3}
+--- !u!4 &7222096035112902333 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2781890325584892072, guid: b4c4eb50e5b83cc44b59f0192a2f15ca, type: 3}
+  m_PrefabInstance: {fileID: 7222096035112902332}
+  m_PrefabAsset: {fileID: 0}
