@@ -700,14 +700,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 1970803077759473861, guid: 5bc29614015fab747b4e3a54a02e0453, type: 3}
-  shootForce: 0
-  shootingRate: 0
-  spread: 0
-  reloadTime: 0
-  range: 0
-  timeBetweenShoting: 0
-  magazineSize: 0
-  bulletsPerTap: 0
+  shootForce: 50
+  shootingRate: 0.05
+  spread: 0.02
+  reloadTime: 2
+  range: 100
+  timeBetweenShoting: 1
+  magazineSize: 30
+  bulletsPerTap: 3
   allowButtonHold: 0
   playerCam: {fileID: 963194227}
   attackPoint: {fileID: 7222096035112902333}
